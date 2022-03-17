@@ -1,1 +1,10 @@
 language: cpp
+compiler:
+ - g++
+ - clang
+ script:
+ - cd formatter_lib/
+ - mkdir build
+ - cd build
+ - cmake ..
+ - cmake . --build
